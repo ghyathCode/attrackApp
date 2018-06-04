@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dash_ic"
+            android:title="Dashboard" />
+    </group>
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/admin_ic"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_program"
+                android:icon="@drawable/program_ic"
+                android:title="Program" />
+            <item
+                android:id="@+id/nav_lessons"
+                android:icon="@drawable/course_ic"
+                android:title="Lessons" />
+        </menu>
+    </item>
+
+    <item android:title="Students">
+        <menu>
+            <item
+                android:id="@+id/nav_view_studetns"
+                android:icon="?android:attr/actionModePasteDrawable"
+                android:title="View Records" />
+            <item
+                android:id="@+id/nav_search_studetns"
+                android:icon="@drawable/ic_search_black_24dp"
+                android:title="Search" />
+        </menu>
+    </item>
+    <item android:title="Logout">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
